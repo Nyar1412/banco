@@ -1,2 +1,2 @@
 blablablabla
-Nuevo Cambio
+Nuevo Cambio de Prorietario
