@@ -1,0 +1,32 @@
+<!-- Pagina home provisional a falta de un mockup diseñado especificamente para esta -->
+<div class="w-50 w-md-100  mx-auto contenedor" style="margin-top: 100px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-3"><label for="user">Usuario: </label></div>
+        <div class="col">
+          <input type="text" id="user" #user class=" form-control w-100"></div>
+      </div>
+      <div class="row">
+          <div class="col-12 col-sm-3"><label for="user">email: </label></div>
+          <div class="col">
+            <input type="email" id="user" #email class=" form-control w-100"></div>
+        </div>
+      <div class="row">
+        <div class="col-12 col-sm-3 text-truncate"><label for="pass">Contraseña: </label></div>
+        <div class="col">
+          <input type="password" id="pass" #pass class=" form-control w-100"></div>
+      </div>
+      <div class="row">
+          <div class="col-12 col-sm-3 text-truncate"><label for="pass">Repetir Contraseña: </label></div>
+          <div class="col">
+            <input type="password" id="pass" #repPass class=" form-control w-100"></div>
+        </div>
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-success" (click)="onSubmit(user.value, pass.value , email.value , repPass.value)" style="margin-top: 10px;"> registrar </button>
+          <!--<button type="button" class="btn btn-outline-success " style="margin-top: 10px;"> registrar </button>-->
+        </div>
+      </div>
+    </div>
+  <p *ngIf="error!==''" class="w-50 mx-auto text-center bg-danger text-light rounded" style="margin-top: 20px;padding:20px 0;">{{this.error}}</p>
+  </div>

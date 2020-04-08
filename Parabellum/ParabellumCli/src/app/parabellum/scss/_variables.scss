@@ -1,0 +1,19 @@
+//datos de bordes
+$borderSize:1px;
+
+//titulos grandes
+$bigFontWeight:600;
+$bigFontSize:20px;
+//listas
+
+$side:
+    ("l","left"),
+    ("r","right"),
+    ("b","bottom"),
+    ("t","top");
+$unidades:
+    (1%,""),
+    (1px,"-px");
+$margen:
+    ("m","margin"),
+    ("p","padding");

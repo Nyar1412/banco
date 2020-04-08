@@ -1,0 +1,17 @@
+@mixin centrado-vertical($valor,$unidad:1%){
+    @if($unidad=="px" or $unidad=="%" or $unidad==1% or $unidad==1px){
+        @if($unidad=="px" or $unidad==1px){
+            $unidad:1px;
+        }@else{
+            $unidad:1%;
+        }
+        position: relative;
+        top: $valor*$unidad;
+        -ms-transform: translateY(-($valor*$unidad));
+        -webkit-transform: translateY(-($valor*$unidad));
+        transform: translateY(-($valor*$unidad));
+    }
+    @else{
+        @error "ERROR!! tipo de unidad no soportada : "+$unidad;
+    }
+}

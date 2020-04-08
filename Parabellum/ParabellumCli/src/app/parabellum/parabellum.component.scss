@@ -1,0 +1,33 @@
+@use "scss/coloresPropios" as colores;
+@use "scss/variables" as var;
+
+
+.botonJumbo{
+    height: 50px;
+    &:hover{
+        border-bottom: var.$borderSize solid colores.$actionred !important;
+        border-left: var.$borderSize solid colores.$actionred !important;
+    }
+}
+.font{
+    &-size{
+        @for $i from 0 through 10{
+            &-#{$i*2}{
+                font-size: $i*2px;
+            }
+        }
+    }
+    &-weight{
+        @for $i from 0 through 6{
+            &-#{$i*100}{
+                font-size: $i*100;
+            }
+        }
+    }
+}
+
+.borde{
+    &-l{
+        border-left: var.$borderSize;
+    }
+}
